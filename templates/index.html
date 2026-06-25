@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | Flask Azure Starter{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <p class="kicker">Production-ready starter</p>
+  <h1>Deploy a polished Flask app to Azure in minutes.</h1>
+  <p class="lead">
+    This project is intentionally lightweight: two routes, clean structure, and App Service-ready runtime setup.
+  </p>
+  <div class="actions">
+    <a class="btn btn-primary" href="{{ url_for('about') }}">Explore Route Two</a>
+    <a class="btn btn-secondary" href="https://learn.microsoft.com/azure/app-service/quickstart-python" target="_blank" rel="noopener noreferrer">
+      Azure Guide
+    </a>
+  </div>
+</section>
+
+<section class="cards">
+  <article class="card">
+    <h2>Two clear routes</h2>
+    <p>
+      Route 1: Home view for product messaging.<br />
+      Route 2: About view for deployment and architecture details.
+    </p>
+  </article>
+  <article class="card">
+    <h2>Azure-friendly setup</h2>
+    <p>
+      Uses <span class="mono">gunicorn</span>, explicit runtime file, and startup command script for App Service.
+    </p>
+  </article>
+  <article class="card">
+    <h2>Neat responsive UI</h2>
+    <p>
+      Custom typography, layered gradients, and a card-based layout that adapts for mobile and desktop.
+    </p>
+  </article>
+</section>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}About | Flask Azure Starter{% endblock %}
+
+{% block content %}
+<section class="hero compact">
+  <p class="kicker">Second route</p>
+  <h1>About this application</h1>
+  <p class="lead">
+    This page demonstrates the second Flask route and doubles as a deployment checklist for Azure App Service.
+  </p>
+</section>
+
+<section class="cards">
+  <article class="card">
+    <h2>Application structure</h2>
+    <p>
+      <span class="mono">app.py</span> defines routes and startup behavior.<br />
+      <span class="mono">templates/</span> stores Jinja pages.<br />
+      <span class="mono">static/css/</span> contains reusable UI styles.
+    </p>
+  </article>
+  <article class="card">
+    <h2>App Service notes</h2>
+    <p>
+      Configure Startup Command as <span class="mono">./startup.sh</span> or directly run gunicorn with
+      <span class="mono">app:app</span>.
+    </p>
+  </article>
+</section>
+{% endblock %}
